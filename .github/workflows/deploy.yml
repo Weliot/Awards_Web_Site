@@ -25,7 +25,10 @@ jobs:
         run: npm ci
 
       - name: Gerar o Build da aplicação
-        run: npm run dev
+        run: npm run build
+
+      - name: Gerar o deploy da aplicação
+        run: npm run deploy
 
       - name: Deploy para o GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
